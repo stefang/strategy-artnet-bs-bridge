@@ -1,13 +1,12 @@
-var myArgs = process.argv.slice(2);
 var dmxlib = require('@stefang/dmxnet');
 
-class strategyArtnetBsBridge {
+export class strategyArtnetBsBridge {
   constructor(options) {
     this.dmxnet = new dmxlib.dmxnet({
       verbose: 0,
     });
 
-    this.sender = dmxnet.newSender({
+    this.sender = this.dmxnet.newSender({
       ip: options.host,
       port: options.port,
       subnet: 0,
@@ -16,7 +15,7 @@ class strategyArtnetBsBridge {
     });
   }
 
-  sendArtnet(msg) {
+  send(msg) {
     console.log(msg);
     for (const [key, value] of Object.entries(msg)) {
       this.sender.prepChannel(parseInt(key), value);

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A very basic artnet bridge for use with strategy-artnet on brightsigns",
   "repository": "git://github.com/stefang/strategy-artnet-bridge.git",
-  "main": "index.js",
+  "main": "dist/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
@@ -11,5 +11,6 @@
     "@stefang/dmxnet": "^0.5.3"
   },
   "author": "Stefan Goodchild @ Triple Geek",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }
