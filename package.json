@@ -1,5 +1,5 @@
 {
-  "name": "@stefang/strategy-artnet-bs-bridge",
+  "name": "iotes-strategy-artnet-bs-bridge",
   "version": "0.0.1",
   "description": "A very basic artnet bridge for use with strategy-artnet on brightsigns",
   "repository": "git://github.com/stefang/strategy-artnet-bridge.git",
@@ -8,7 +8,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@stefang/dmxnet": "^0.5.3"
+    "dmxnet-nologging": "^0.5.3"
   },
   "author": "Stefan Goodchild @ Triple Geek",
   "license": "MIT",
